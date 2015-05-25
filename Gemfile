@@ -5,7 +5,8 @@ gem 'rails', '3.2.17'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# Commented out the next line to fix Heroku issue (comes default)
+#gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -43,4 +44,12 @@ end
 
 group :test do
   gem 'rspec', '~> 2.8'
+end
+
+# Added this lines to solve Heroku's issue
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
 end
