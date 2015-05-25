@@ -53,3 +53,11 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
+
+# Gemfile ... autotest
+gem 'autotest-rails', :group => [:development, :test]
+
+#fix rspec undefined method 'has_select'
+group :test do
+  gem 'webrat'
+end
