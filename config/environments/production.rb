@@ -67,5 +67,5 @@ SampleApp::Application.configure do
 
   #precompile to fix Heroku issue
   config.assets.precompile += %w( *.css *.js )
-  config.assets.precompile += %w( blueprint/screen.css blueprint/print.css blueprint.ie.css )
+  config.assets.precompile += %w( blueprint/screen.css blueprint/print.css blueprint/ie.css )
 end
