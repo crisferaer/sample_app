@@ -66,3 +66,8 @@ end
 group :development do
   gem 'annotate', '~> 2.6.10'
 end
+
+#factory girl
+group :test do
+  gem 'factory_girl_rails', '1.0'
+end
