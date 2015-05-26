@@ -61,3 +61,8 @@ gem 'autotest-rails', :group => [:development, :test]
 group :test do
   gem 'webrat'
 end
+
+#annotate-models
+group :development do
+  gem 'annotate', '~> 2.6.10'
+end
